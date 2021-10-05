@@ -1,7 +1,7 @@
 # Личный проект «Шесть городов»
 
 * Студент: [rapax](https://up.htmlacademy.ru/react/8/user/31927).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Гуляев](https://htmlacademy.ru/profile/dima).
 
 ---
 
