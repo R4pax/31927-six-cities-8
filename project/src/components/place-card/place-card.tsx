@@ -1,14 +1,13 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { placeCard } from '../../types/PlaceCards';
 
-function PlaceCard({
-  type,
-  place,
-}: {
+import { placeCard } from '../../types/place-cards';
+
+type PlaceCardProps = {
   type: string;
   place: placeCard;
-}): JSX.Element {
-  // const clase: string[] = ["near-places", "cities", "favorites"];
+};
+
+function PlaceCard({ type, place }: PlaceCardProps): JSX.Element {
   return (
     <article className={`${type}__place-card place-card`}>
       {place.isPremium && (

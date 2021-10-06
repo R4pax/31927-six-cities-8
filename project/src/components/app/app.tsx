@@ -1,9 +1,13 @@
 import MainScreen from '../main-screen/main-screen';
 
-import { placeCards } from '../../types/PlaceCards';
+import { placeCards } from '../../types/place-cards';
 
-function App({places} : {places: placeCards}): JSX.Element {
-  return <MainScreen places={places} />;
+type AppProps = {
+  places: placeCards;
+};
+
+function App(props: AppProps): JSX.Element {
+  return <MainScreen places={props.places} />;
 }
 
 export default App;
