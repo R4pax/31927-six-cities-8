@@ -1,9 +1,14 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { placeCards, placeCard } from '../../types/PlaceCards';
+
+import { placeCards, placeCard } from '../../types/place-cards';
 import Header from '../header/header';
 import PlaceCard from '../place-card/place-card';
 
-function MainScreen({places} : {places: placeCards} ): JSX.Element {
+type MainScreenProps = {
+  places: placeCards;
+}
+
+function MainScreen({places} : MainScreenProps): JSX.Element {
   return (
     <div className='page page--gray page--main'>
       <Header />

@@ -1,5 +1,4 @@
 import MainScreen from '../main-screen/main-screen';
-
 import { placeCards } from '../../types/PlaceCards';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Page404 from '../page-404/page-404';
@@ -8,9 +7,13 @@ import FavoritesScreen from '../favorites-screen/favorites-screen';
 import PropertyScreen from '../property-screen/property-screen';
 import PrivateRoute from '../../hocs/private-route';
 
+type AppProps = {
+  places: placeCards;
+};
+
 const isAuthorized = false;
 
-function App({ places }: { places: placeCards }): JSX.Element {
+function App({ places }: AppProps): JSX.Element {
   return (
     <BrowserRouter>
       <Switch>

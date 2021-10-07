@@ -1,44 +1,14 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable jsx-a11y/img-redundant-alt */
 
-import { placeCards } from '../../types/PlaceCards';
+import { placeCards } from '../../types/place-cards';
 import PlaceCard from '../place-card/place-card';
 
-/* eslint-disable jsx-a11y/img-redundant-alt */
-function FavoritesList():JSX.Element {
-  const places: placeCards = [
-    {
-      id: 4,
-      isPremium: true,
-      isFavorite: true,
-      imgSrc: 'img/apartment-03.jpg',
-      imgAlt: 'Place image',
-      priceValue: 180,
-      ratingPercents: 100,
-      placeName: 'Nice, cozy, warm big bed apartment',
-      placeType: 'Apartment',
-    },
-    {
-      id: 5,
-      isFavorite: true,
-      imgSrc: 'img/room.jpg',
-      imgAlt: 'Place image',
-      priceValue: 80,
-      ratingPercents: 80,
-      placeName: 'Wood and stone place',
-      placeType: 'Private room',
-    },
-    {
-      id: 6,
-      isFavorite: true,
-      imgSrc: 'img/apartment-small-04.jpg',
-      imgAlt: 'Place image',
-      priceValue: 180,
-      ratingPercents: 100,
-      placeName: 'White castle',
-      placeType: 'Apartment',
-    },
-  ];
+type FavoritesProps = {
+  places :placeCards
+}
 
+function FavoritesList({places} : FavoritesProps):JSX.Element {
   return (
     <ul className='favorites__list'>
       <li className='favorites__locations-items'>
