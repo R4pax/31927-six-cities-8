@@ -4,10 +4,10 @@
 import FavoritesList from '../favorites-list/favorites-list';
 import Footer from '../footer/footer';
 import Header from '../header/header';
-import { placeCards } from '../../types/place-cards';
+import { PlaceCards } from '../../types/place-cards';
 
 type FavoritesScreenProps = {
-  favoritePlaces: placeCards;
+  favoritePlaces: PlaceCards;
 };
 
 function FavoritesScreen(props: FavoritesScreenProps): JSX.Element {

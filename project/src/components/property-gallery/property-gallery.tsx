@@ -1,9 +1,9 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 
-import { imagesData } from '../../types/image-data';
+import { ImagesData } from '../../types/image-data';
 
 type PropertyGalleryProps = {
-  images: imagesData;
+  images: ImagesData;
 };
 
 function PropertyGallery(props: PropertyGalleryProps): JSX.Element {

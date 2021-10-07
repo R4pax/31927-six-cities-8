@@ -1,11 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/img-redundant-alt */
 
-import { placeCard, placeCards } from '../../types/place-cards';
+import { PlaceCard, PlaceCards } from '../../types/place-cards';
 import PlaceCard from '../place-card/place-card';
 
 type PropertyNearPlacesProps = {
-  places: placeCards;
+  places: PlaceCards;
 };
 
 function PropertyNearPlaces(props: PropertyNearPlacesProps): JSX.Element {
@@ -17,7 +17,7 @@ function PropertyNearPlaces(props: PropertyNearPlacesProps): JSX.Element {
           Other places in the neighbourhood
         </h2>
         <div className='near-places__list places__list'>
-          {places.map((place: placeCard) => (
+          {places.map((place: PlaceCard) => (
             <PlaceCard key={place.id} type='near-places' place={place} />
           ))}
         </div>

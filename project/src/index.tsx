@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/app/app';
-import { imagesData } from './types/image-data';
-import { placeCards } from './types/place-cards';
+import { ImagesData } from './types/image-data';
+import { PlaceCards } from './types/place-cards';
 
-const MAIN_PLACES: placeCards = [
+const MAIN_PLACES: PlaceCards = [
   {
     id: 1,
     isPremium: true,
@@ -56,7 +56,7 @@ const MAIN_PLACES: placeCards = [
   },
 ];
 
-const GALLERY_IMAGES: imagesData = [
+const GALLERY_IMAGES: ImagesData = [
   {
     id: 1,
     imgSrc: 'img/room.jpg',
@@ -89,7 +89,7 @@ const GALLERY_IMAGES: imagesData = [
   },
 ];
 
-const NEAR_PLACES: placeCards = [
+const NEAR_PLACES: PlaceCards = [
   {
     id: 2,
     imgSrc: 'img/room.jpg',
@@ -120,7 +120,7 @@ const NEAR_PLACES: placeCards = [
   },
 ];
 
-const FAVORITE_PLACES: placeCards = [
+const FAVORITE_PLACES: PlaceCards = [
   {
     id: 4,
     isPremium: true,

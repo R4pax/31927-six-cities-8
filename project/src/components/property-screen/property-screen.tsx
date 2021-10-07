@@ -4,13 +4,13 @@ import PropertyGallery from '../property-gallery/property-gallery';
 import PropertyReviews from '../property-reviews/property-reviews';
 import PropertyNearPlaces from '../property-near-places/property-near-places';
 import PropertyMap from '../property-map/property-map';
-import { imagesData } from '../../types/image-data';
-import { placeCards } from '../../types/place-cards';
+import { ImagesData } from '../../types/image-data';
+import { PlaceCards } from '../../types/place-cards';
 
 type PropertyScreenProps = {
   isAuthorized: boolean;
-  nearPlaces: placeCards;
-  galleryImages: imagesData;
+  nearPlaces: PlaceCards;
+  galleryImages: ImagesData;
 };
 
 function PropertyScreen(props: PropertyScreenProps): JSX.Element {

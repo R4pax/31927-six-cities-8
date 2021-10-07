@@ -1,3 +1,3 @@
-export type imageData = { id: number; imgSrc: string; imgAlt: string };
+export type ImageData = { id: number; imgSrc: string; imgAlt: string };
 
-export type imagesData = imageData[];
+export type ImagesData = ImageData[];

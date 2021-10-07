@@ -5,14 +5,14 @@ import LoginScreen from '../login-screen/login-screen';
 import FavoritesScreen from '../favorites-screen/favorites-screen';
 import PropertyScreen from '../property-screen/property-screen';
 import PrivateRoute from '../../hocs/private-route';
-import { placeCards } from '../../types/place-cards';
-import { imagesData } from '../../types/image-data';
+import { PlaceCards } from '../../types/place-cards';
+import { ImagesData } from '../../types/image-data';
 
 type AppProps = {
-  mainPlaces: placeCards;
-  nearPlaces: placeCards;
-  favoritePlaces: placeCards;
-  galleryImages: imagesData;
+  mainPlaces: PlaceCards;
+  nearPlaces: PlaceCards;
+  favoritePlaces: PlaceCards;
+  galleryImages: ImagesData;
 };
 
 const isAuthorized = false;

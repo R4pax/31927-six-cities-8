@@ -1,11 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 
-import { placeCards, placeCard } from '../../types/place-cards';
+import { PlaceCards, PlaceCard } from '../../types/place-cards';
 import Header from '../header/header';
 import PlaceCard from '../place-card/place-card';
 
 type MainScreenProps = {
-  mainPlaces: placeCards;
+  mainPlaces: PlaceCards;
 };
 
 function MainScreen(props: MainScreenProps): JSX.Element {
@@ -83,7 +83,7 @@ function MainScreen(props: MainScreenProps): JSX.Element {
                 </ul>
               </form>
               <div className='cities__places-list places__list tabs__content'>
-                {mainPlaces.map((place: placeCard) => (
+                {mainPlaces.map((place: PlaceCard) => (
                   <PlaceCard key={place.id} type='cities' place={place} />
                 ))}
               </div>

@@ -1,10 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 
-import { placeCard } from '../../types/place-cards';
+import { PlaceCard } from '../../types/place-cards';
 
 type PlaceCardProps = {
   type: string;
-  place: placeCard;
+  place: PlaceCard;
 };
 
 function PlaceCard(props: PlaceCardProps): JSX.Element {

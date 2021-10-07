@@ -1,11 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/img-redundant-alt */
 
-import { placeCards } from '../../types/place-cards';
+import { PlaceCards } from '../../types/place-cards';
 import PlaceCard from '../place-card/place-card';
 
 type FavoritesProps = {
-  places: placeCards;
+  places: PlaceCards;
 };
 
 function FavoritesList(props: FavoritesProps): JSX.Element {
