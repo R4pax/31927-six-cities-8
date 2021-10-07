@@ -8,7 +8,8 @@ type PropertyNearPlacesProps = {
   places: placeCards;
 };
 
-function PropertyNearPlaces({ places }: PropertyNearPlacesProps): JSX.Element {
+function PropertyNearPlaces(props: PropertyNearPlacesProps): JSX.Element {
+  const { places } = props;
   return (
     <div className='container'>
       <section className='near-places places'>

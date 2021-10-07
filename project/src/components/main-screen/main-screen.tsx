@@ -5,10 +5,11 @@ import Header from '../header/header';
 import PlaceCard from '../place-card/place-card';
 
 type MainScreenProps = {
-  places: placeCards;
-}
+  mainPlaces: placeCards;
+};
 
-function MainScreen({places} : MainScreenProps): JSX.Element {
+function MainScreen(props: MainScreenProps): JSX.Element {
+  const { mainPlaces } = props;
   return (
     <div className='page page--gray page--main'>
       <Header />
@@ -82,7 +83,9 @@ function MainScreen({places} : MainScreenProps): JSX.Element {
                 </ul>
               </form>
               <div className='cities__places-list places__list tabs__content'>
-                {places.map((place:placeCard) => <PlaceCard key={place.id} type='cities' place={place} />)}
+                {mainPlaces.map((place: placeCard) => (
+                  <PlaceCard key={place.id} type='cities' place={place} />
+                ))}
               </div>
             </section>
             <div className='cities__right-section'>

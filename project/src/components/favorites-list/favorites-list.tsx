@@ -5,10 +5,11 @@ import { placeCards } from '../../types/place-cards';
 import PlaceCard from '../place-card/place-card';
 
 type FavoritesProps = {
-  places :placeCards
-}
+  places: placeCards;
+};
 
-function FavoritesList({places} : FavoritesProps):JSX.Element {
+function FavoritesList(props: FavoritesProps): JSX.Element {
+  const { places } = props;
   return (
     <ul className='favorites__list'>
       <li className='favorites__locations-items'>

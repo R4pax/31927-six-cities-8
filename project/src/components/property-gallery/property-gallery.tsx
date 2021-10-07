@@ -6,7 +6,8 @@ type PropertyGalleryProps = {
   images: imagesData;
 };
 
-function PropertyGallery({ images }: PropertyGalleryProps): JSX.Element {
+function PropertyGallery(props: PropertyGalleryProps): JSX.Element {
+  const { images } = props;
   return (
     <div className='property__gallery-container container'>
       <div className='property__gallery'>

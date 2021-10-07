@@ -7,7 +7,8 @@ type PlaceCardProps = {
   place: placeCard;
 };
 
-function PlaceCard({ type, place }: PlaceCardProps): JSX.Element {
+function PlaceCard(props: PlaceCardProps): JSX.Element {
+  const { type, place } = props;
   return (
     <article className={`${type}__place-card place-card`}>
       {place.isPremium && (
