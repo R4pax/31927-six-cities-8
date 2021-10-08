@@ -5,17 +5,17 @@ import LoginScreen from '../login-screen/login-screen';
 import FavoritesScreen from '../favorites-screen/favorites-screen';
 import PropertyScreen from '../property-screen/property-screen';
 import PrivateRoute from '../../hocs/private-route';
-import { PlaceCards } from '../../types/place-cards';
-import { ImagesData } from '../../types/image-data';
+import { FavoritePlacesData, PlaceCardData } from '../../types/place-cards';
+import { ImageData } from '../../types/image-data';
 
 type AppProps = {
-  mainPlaces: PlaceCards;
-  nearPlaces: PlaceCards;
-  favoritePlaces: PlaceCards;
-  galleryImages: ImagesData;
+  mainPlaces: PlaceCardData[];
+  nearPlaces: PlaceCardData[];
+  favoritePlaces: FavoritePlacesData[];
+  galleryImages: ImageData[];
 };
 
-const isAuthorized = false;
+const isAuthorized = true;
 
 function App(props: AppProps): JSX.Element {
   const { mainPlaces, nearPlaces, favoritePlaces, galleryImages } = props;

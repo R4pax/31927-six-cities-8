@@ -4,10 +4,10 @@
 import FavoritesList from '../favorites-list/favorites-list';
 import Footer from '../footer/footer';
 import Header from '../header/header';
-import { PlaceCards } from '../../types/place-cards';
+import { FavoritePlacesData } from '../../types/place-cards';
 
 type FavoritesScreenProps = {
-  favoritePlaces: PlaceCards;
+  favoritePlaces: FavoritePlacesData[];
 };
 
 function FavoritesScreen(props: FavoritesScreenProps): JSX.Element {
@@ -19,7 +19,7 @@ function FavoritesScreen(props: FavoritesScreenProps): JSX.Element {
         <div className='page__favorites-container container'>
           <section className='favorites'>
             <h1 className='favorites__title'>Saved listing</h1>
-            <FavoritesList places={favoritePlaces} />
+            <FavoritesList favorites={favoritePlaces} />
           </section>
         </div>
       </main>

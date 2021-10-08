@@ -1,4 +1,4 @@
-export type PlaceCard = {
+export type PlaceCardData = {
   id: number;
   isPremium?: boolean;
   isFavorite?: boolean;
@@ -10,5 +10,9 @@ export type PlaceCard = {
   placeType: string;
 };
 
-export type PlaceCards = PlaceCard[];
 
+export type FavoritePlacesData = {
+  id: number;
+  town: string;
+  places: PlaceCardData[];
+}
